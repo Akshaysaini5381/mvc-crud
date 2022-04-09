@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+ @*   @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+
+<link href="~/Content/css/metisMenu.min.css" rel="stylesheet" />
+<link href="~/Content/css/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+<link href="~/Content/css/dataTables/dataTables.responsive.css" rel="stylesheet" />
+
+<link href="~/Content/css/timeline.css" rel="stylesheet" />
+<link href="~/Content/css/startmin.css" rel="stylesheet" />
+
+<link href="~/Content/css/morris.css" rel="stylesheet" />
+<link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="wrapper">
+      @Html.Partial("_leftnavbar")
+
+        @RenderBody()
+    </div>
+      
+  
+
+
+ @*       @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+
+<script src="~/Scripts/js/jquery.min.js"></script>
+<script src="~/Scripts/js/bootstrap.min.js"></script>
+
+<script src="~/Scripts/js/metisMenu.min.js"></script>
+<script src="~/Scripts/js/raphael.min.js"></script>
+
+<script src="~/Scripts/js/dataTables/jquery.dataTables.min.js"></script>
+
+<script src="~/Scripts/js/dataTables/dataTables.bootstrap.min.js"></script>
+
+
+
+
+@*<script src="~/Scripts/js/morris.min.js"></script>
+<script src="~/Scripts/js/morris-data.js"></script>*@
+<script src="~/Scripts/js/startmin.js"></script>
+
+</body>
+</html>

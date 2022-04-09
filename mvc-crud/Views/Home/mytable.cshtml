@@ -1,0 +1,42 @@
+﻿@*@model List<mvc_crud.Models.Class1>
+@{
+    ViewBag.Title = "mytable";
+}
+
+<h2>mytable</h2>
+
+<table class="table">
+
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>city</th>
+        <th>college</th>
+        <th>edit</th>
+        <th>delete</th>
+    </tr>
+
+
+
+    @foreach (var item in Model)
+
+
+
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.email</td>
+            <td>@item.city</td>
+            <td>@item.college</td>
+            <td><a href="@Url.Action("edit","Home",new {item.id })"> <i class="fa fa-edit"></i> edit</a></td>
+            <td><a href="@Url.Action("delete","Home",new {item.id })"><i class="fa fa-trash"></i>delete</a></td>
+        </tr>
+    }
+
+
+
+
+
+</table>*@
